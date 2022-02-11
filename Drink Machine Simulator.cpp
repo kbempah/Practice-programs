@@ -9,6 +9,8 @@
 #include <cstdlib>
 using namespace std;
 
+const int SIZE = 5;	//Array size declarator
+
 /*
 The Beverage structure defines member variables to hold drink information: drink name, drink cost, drink ID, and drink quantity
 */
@@ -34,8 +36,7 @@ void validatePayment(double&);
 void vendingNow(Beverage[], int, double&);
 
 int main()
-{
-	const int SIZE = 5;		
+{	
 	Beverage drink[SIZE] {
 						 	{"Cola", 1.50, 101, 20}, 
 						 	{"Root Beer", 1.50, 201, 20}, 
