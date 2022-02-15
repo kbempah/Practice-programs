@@ -52,12 +52,12 @@ int main()
 		//Read names from file into name, increase boyNames by name
 		while (file >> name)
 			boyNames.push_back(name);
-		
-		//Sort boyNames for binary search
-		std::sort(boyNames.begin(),boyNames.end());
 			
 		//CLose file
 		file.close();
+		
+		//Sort boyNames for binary search
+		std::sort(boyNames.begin(),boyNames.end());
 	}
 	else
 	{
@@ -77,11 +77,11 @@ int main()
 		while (file >> name)
 			girlNames.push_back(name);
 		
-		//Sort girlNames
-		std::sort(girlNames.begin(),girlNames.end());
-		
 		//Close file
 		file.close();
+		
+		//Sort girlNames
+		std::sort(girlNames.begin(),girlNames.end());
 	}
 	else
 	{
