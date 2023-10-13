@@ -1,0 +1,15 @@
+# build files
+/obj
+*.[oa]
+
+# .DS_Store, whatever this thing is
+.DS_Store
+
+# ignore configuration files
+.vscode
+
+# no makefile tracking
+Makefile
+
+# no tracking for driver
+main.cpp
