@@ -13,6 +13,7 @@ private:
     std::string name;
 public:
     auto getName(void) -> std::string_view const;
+    virtual auto getArea(void) -> double const = 0;
 };
 
 #endif
