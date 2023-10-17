@@ -10,7 +10,7 @@ private:
 public:
     auto getWidth(void) -> double const;
     auto getLength(void) -> double const;
-    void setWidth(double);
-    void setLength(double);
+    auto setWidth(double) -> void;
+    auto setLength(double) -> void;
     virtual auto getArea(void) -> double const override final;
 };
