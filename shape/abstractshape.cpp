@@ -7,4 +7,4 @@ Shape::Shape(const std::string_view& n)
 Shape::~Shape()
 {}
 
-std::string_view Shape::getName() const { return name; }
+auto Shape::getName() -> std::string_view const { return name; }

@@ -12,7 +12,7 @@ public:
 private:
     std::string name;
 public:
-    std::string_view getName() const;
+    auto getName(void) -> std::string_view const;
 };
 
 #endif
