@@ -7,7 +7,13 @@ Circle::Circle(const std::string_view& n, double r) : Shape{n}
 
 Circle::~Circle() {}
 
-double Circle::getArea() const
+inline auto Circle::getArea() const -> double
 {
     return Circle::PI * getRadius() * getRadius();
 }
+
+inline auto Circle::getRadius() const -> double
+{
+    return radius;
+}
+

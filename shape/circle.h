@@ -5,8 +5,8 @@ class Circle : Shape
     public:
         Circle(const std::string_view&, double);
         ~Circle();
-        auto getArea(void) const -> double;
-        auto getRadius(void) -> double;
+        inline auto getArea(void) const -> double;
+        inline auto getRadius(void) const -> double;
         auto setRadius(double r) -> void;
     private:
         double radius;
